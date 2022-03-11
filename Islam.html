@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+  <style>
+      .color{
+          background-color: #2D6E7E;
+          color: #FFFDDE;
+          border-radius: 10px;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.flex-container > div {
+  
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  text-align: center;
+  line-height: 1px;
+  font-size: 30px;
+}
+body {
+  padding: 25px;
+  background-color: #FBF8F1;
+  color: #010038;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: #022C43;
+  color: #FFD700;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lightblue;
+ 
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
+}
+      
+      
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="Logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill"> 
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: #6FE7DD;">Islam</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html" style="color: #36539F;">Cultures of Asia</a></li>
+            <li><a class="dropdown-item" href="Buddhism.html" style="color: #36539F;">Buddhism</a></li>
+            <li><a class="dropdown-item" href="Christianity.html" style="color: #36539F;">Christianity</a></li>
+            <li><a class="dropdown-item" href="Confucianism.html" style="color: #36539F;">Confucianism</a></li>
+            <li><a class="dropdown-item" href="Hinduism.html" style="color: #36539F;">Hinduism</a></li>
+            <li><a class="dropdown-item" href="Islam.html" style="color: #36539F;">Islam</a></li>
+            <li><a class="dropdown-item" href="Jainism.html" style="color: #36539F;">Jainism</a></li>
+            <li><a class="dropdown-item" href="Judaism.html" style="color: #36539F;"> Judaism</a></li>
+            <li><a class="dropdown-item" href="Shintoism.html" style="color: #36539F;">Shintoism</a></li>
+            <li><a class="dropdown-item" href="Sikhism.html" style="color: #36539F;">Sikhism</a></li>
+            <li><a class="dropdown-item" href="Taoism.html" style="color: #36539F;">Taoism</a></li>
+            <li><a class="dropdown-item" href="Zoroastrianism.html" style="color: #36539F;">Zoroastrianism</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mt-3">
+  <h3 class="font-effect-shadow-multiple" style="text-align: center; font-size: 40px; ">Islam</h3>
+  <label class="switch" style="margin-left: 90%;">
+    <input type="checkbox">
+    <span class="slider round" onclick="myFunction()" ></span>
+  </label>
+  <div class="flex-container">
+    <div>
+      <img style="height:20%;width: 20%;margin-left: -50%;margin-top: 5%" src="islam.png" >
+    </div>
+    <div>
+      <h4 style="margin-left: -50%; margin-top: 5%;font-family: droid-sans;">
+        Islam (/ˈɪslɑːm/;[a] Arabic: اَلْإِسْلَامُ, romanized: al-’Islām, [ɪsˈlaːm] is an Abrahamic, monotheistic, and universal religion teaching that Muhammad is a messenger of God.
+        It is the world's second-largest religion with 1.9 billion followers or 24.9% of the world's population,known as Muslims. Islam teaches that God is merciful, all-powerful, and unique,
+        and has guided humanity through prophets, revealed scriptures, and natural signs. The primary scriptures of Islam are the Quran, believed to be the verbatim word of God, as well as the teachings and practices (sunnah), in traditional accounts (hadith) of Muhammad (c. 570 – 632 CE).
+      </h4>
+    </div>
+
+  </div>
+  <h3 style="text-align: center; font-size: 40px;font-family: Caveat Brush;">How Islam started</h3>
+  <video width="800" height="600" style=" align-items: center; margin-left: 20%;margin-top: -6%;" controls>
+    <source style="align-self: center;" src="Islam.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+  </video>
+  <div class="flex-container">
+    <div>
+      <img style="width: 80%;height: 50%; margin-top: 10%;margin-left: -25%;" src="Islam_place.png" >
+    </div>
+    <div>
+      <h4 style="font-family: 'Caveat Brush'; text-align: center; font-size: 50px">
+        The place where hinduism is found
+      </h4>
+      <h4 style="font-family: droid-sans; margin-left: -23%;">
+        According to the Pew Research Center in 2010, there were 50 Muslim-majority countries. Around 62% of the world's Muslims live in the Asia-Pacific region (from Turkey to Indonesia), with over one billion adherents.
+        The largest Muslim population in a country is in Indonesia, a country home to 12.7% of the world's Muslims, followed by Pakistan (11.1%), India (10.9%) and Bangladesh (9.2%).
+        About 20% of Muslims live in the Arab world. In the Middle East, the non-Arab countries of Iran and Turkey are the largest Muslim-majority countries, while Egypt and Nigeria in Africa have the same status.
+        The study found more Muslims in the United Kingdom than in Lebanon and more in China than in Syria. The Indian state of Uttar Pradesh has more Muslims than any other Muslim-majority countries except Indonesia, Pakistan, Bangladesh, Egypt, Iran and Turkey.
+      </h4>
+    </div>
+  </div>
+  
+  <h4 style="text-align: center; margin-top: 5%;text-align: center; font-family: 'Caveat Brush'; font-size: 50px;margin-left: 0%;">
+    Islam clothing
+  </h4>
+  <div class="flex-container">
+    <div>
+      <h4 style="font-family: droid-sans;width: 140%;">
+        Islamic clothing is clothing that is interpreted as being in accordance with the teachings of Islam. Muslims wear a wide variety of clothing, which is influenced not only by religious considerations, but also practical, cultural, social, and political factors. In modern times, some Muslims have adopted clothing based on Western traditions, while others wear modern forms of traditional Muslim dress, which over the centuries has typically included long, flowing garments. Besides its practical advantages in the climate of the Middle East, loose-fitting clothing is also generally regarded as conforming to Islamic teachings, which stipulate that body areas which are sexual in nature must be hidden from public view. Traditional dress for Muslim men has typically covered at least the head and the area between the waist and the knees, while traditional women's dress conceals the hair and the body from the ankles to the neck.
+        Some Muslim women also cover their face. slamic dress is influenced by two scriptural sources, the Quran and hadith. The Quran provides guiding principles believed to have come from God, while the body of hadith describes a human role model through the traditions of the Islamic prophet Muhammad. The branch of fashion industry influenced by Islamic principles is known as Islamic fashion.
+      </h4>
+    </div>
+    <div>
+      <img style="border-radius: 3%;width: 60%;height: 60%;margin-left: 40%;" src="Islam clothing.jpeg">
+    </div>
+    
+  </div>
+  <h4 style="text-align: center; margin-top: 5%;text-align: center; font-family: 'Caveat Brush'; font-size: 50px;margin-left: 0%;">
+    Islam festival
+  </h4>
+  <div class="flex-container">
+    <div>
+      <img style="width: 60%;height: 60%;margin-left: -45%;" src="Islam festival.jpeg">
+    </div>
+    <div>
+      <h4 style="font-family: droid-sans;margin-left: -42%;">
+        Al-Hijra — Islamic New Year. Marks the end of Mohammad's journey from Mecca to Medina.
+      </h4>
+      <h4 style="font-family: droid-sans;margin-left: -40%;">
+        Eid ul-Adha — Festival of Sacrifice. This is a four day holiday marking the sacrifice of Abraham.  It also highlights the end of the annual pilgrimage to Mecca, called Hajj.  Prayer are held at the mosque followed by an evening feast.
+      </h4>
+      <h4 style="font-family: droid-sans;margin-left: -40%;">
+        Eid ul-Fitr  — End of Muslim Month of Fasting (Ramadan).  A celebratory meal on the evening of this day.  It is a three day celebration and many will attend early morning prayers, affecting attendance.
+      </h4>
+      <h4 style="font-family: droid-sans;margin-left: -40%;">
+        Prophet's Birthday -- Celebration of the birth of the Prophet Muhammad. Celebrations, communal meals and discussions on Islam usually take place on this day.
+      </h4>
+      <h4 style="font-family: droid-sans;margin-left: -40%;">
+        Ramadan — Muslim Month of Fasting. Muslims fast from sunrise to sunset with the last ten days reserved for possible all night prayer vigils. Attendance should not be affected.
+      </h4>
+      
+    </div>
+  </div>
+  <h4 style="text-align: center; margin-top: 5%;text-align: center; font-family: 'Caveat Brush'; font-size: 50px;margin-left: 0%;">
+    Islam Beliefs
+  </h4>
+  <div class="flex-container">
+    <div>
+      <h4 style="font-family: droid-sans;width: 140%;">
+        The first pillar of Islam is called Shahadah or The Declaration of Faith. The shahada is the most basic expression of Islamic beliefs. It simply states that “There is no God but Allah and Muhammad is his prophet.” When a Muslim recites this they accept it as true and will follow all of the commitments of Islam. To become a Muslim, a person must recite this three times with complete sincerity in front of witnesses. 
+      </h4>
+      <h4 style="font-family: droid-sans;width: 140%;">
+        The second pillar of Islam is Salat or Prayer. Muslims are expected to pray five times a day while facing Mecca. In Islamic countries there is a public call to prayer which sets the day. This ritual is over 1400 years old and practiced by millions of Muslims across the world. 
+      </h4>
+      <h4 style="font-family: droid-sans;width: 140%;">
+        Zakat-charity or almsgiving is the third pillar of Islam. Muslims believe that they are meant to share their wealth with those less fortunate in their community of believers. Each year Muslims are expected to give 2.5% of their wages to charity. This giving is a form of worship and self-purification. This practice frees them from clinging to possessions and greed.
+      </h4>
+      <h4 style="font-family: droid-sans;width: 140%;">
+        Fasting during the holy month of Ramadan is called Sawm and it is the fourth pillar of Islam. Ramadan occurs in the 9th month in the Islamic calendar. Ramadan lasts for 30 days. For the first 29 days Muslims are expected to fast giving up food or drink from dawn till dusk. They view Sawm as obedience to God and learn self-discipline to become spiritually stronger. 
+      </h4>
+      <h4 style="font-family: droid-sans;width: 140%;">
+        The last of the five pillars of Islam is Hajj in which all Muslims, who are able, are required to make the pilgrimage, to Mecca and surrounding holy sites at least once in their lives. This ritual promotes the bonds of Islam and occurs once a year where every Muslim gathers together in Mecca to praise Allah before the Kaaba, a shrine in the great Mosque in Mecca. The Hajj occurs in the 12 month of the Islamic calendar. 
+      </h4>
+    </div>
+    <div>
+      <img style="width: 60%;height: 60%;margin-left: 40%;" src="Islam beliefs.png">
+    </div>
+    
+  </div>
+</div>
+  
+
+  
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+  
+  
+</div>
+
+</body>
+</html>
+
+
+

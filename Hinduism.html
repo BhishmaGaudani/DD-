@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+  <style>
+      .color{
+          background-color: #2D6E7E;
+          color: #FFFDDE;
+          border-radius: 10px;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.flex-container > div {
+  
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  text-align: center;
+  line-height: 1px;
+  font-size: 30px;
+}
+body {
+  padding: 25px;
+  background-color: #FBF8F1;
+  color: #010038;
+  font-size: 25px;
+
+}
+ 
+.dark-mode {
+  background-color: #022C43;
+  color: #FFD700;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lightblue;
+ 
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
+}
+      
+      
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="Logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill"> 
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: #6FE7DD;">Hinduism</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html" style="color: #36539F;">Cultures of Asia</a></li>
+            <li><a class="dropdown-item" href="Buddhism.html" style="color: #36539F;">Buddhism</a></li>
+            <li><a class="dropdown-item" href="Christianity.html" style="color: #36539F;">Christianity</a></li>
+            <li><a class="dropdown-item" href="Confucianism.html" style="color: #36539F;">Confucianism</a></li>
+            <li><a class="dropdown-item" href="Hinduism.html" style="color: #36539F;">Hinduism</a></li>
+            <li><a class="dropdown-item" href="Islam.html" style="color: #36539F;">Islam</a></li>
+            <li><a class="dropdown-item" href="Jainism.html" style="color: #36539F;">Jainism</a></li>
+            <li><a class="dropdown-item" href="Judaism.html" style="color: #36539F;"> Judaism</a></li>
+            <li><a class="dropdown-item" href="Shintoism.html" style="color: #36539F;">Shintoism</a></li>
+            <li><a class="dropdown-item" href="Sikhism.html" style="color: #36539F;">Sikhism</a></li>
+            <li><a class="dropdown-item" href="Taoism.html" style="color: #36539F;">Taoism</a></li>
+            <li><a class="dropdown-item" href="Zoroastrianism.html" style="color: #36539F;">Zoroastrianism</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mt-3">
+      <h3 class="font-effect-shadow-multiple" style=" font-size: 70px;text-align: center;">Hinduism</h3>
+</div>
+
+  
+
+  <label class="switch" style="margin-left: 90%;">
+    <input type="checkbox">
+    <span class="slider round" onclick="myFunction()" ></span>
+  </label>
+  <div class="flex-container">
+    <div>
+      <img style="height: 30%;width: 30%;margin-left: -50%;" src="hinduism.png" >
+    </div>
+    <div>
+      
+      <h4 style="margin-left: -50%; margin-top: 10%;font-family: droid-sans;" >
+        Hinduism (/ˈhɪnduɪzəm/) is an Indian religion and dharma, or way of life. It is the world's third-largest religion, with over 1.2 billion followers, or 15–16% of the global population, known as Hindus. ... Another, though less fitting, self-designation is Vaidika dharma, the 'dharma related to the Vedas.
+      </h4>
+    </div>
+
+  </div>
+  <h4 style="text-align: center; margin-top: 5%;text-align: center; font-family: 'Caveat Brush'; font-size: 70px;">Hinduism</h4>
+  <video width="800" height="600" style=" align-items: center; margin-left: 20%;margin-top: -6%;" controls>
+    <source style="align-self: center;" src="Hinduism.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+  </video>
+
+  <div class="flex-container">
+    <div>
+      <img style="width: 70%;height: 40%;" src="hinduism_place.png" >
+    </div>
+    <div>
+      <h4 style="font-family: 'Caveat Brush'; text-align: center; font-size: 50px">
+        The place where hinduism is found
+      </h4>
+      <h4 style="font-family: droid-sans;">
+        Presently, India and Nepal are the two Hindu majority countries. Most Hindus are found in Asian countries
+      </h4>
+    </div>
+  </div>
+  <h4 style="font-family: 'Caveat Brush'; text-align: center; font-size: 50px; margin-top: 5%;";>
+    the tirtha 
+  </h4>
+  <div class="flex-container">
+    <div>
+      <h4 style="text-align: center;width: 130%;font-family: droid-sans;">
+    tirtha, (Sanskrit: “crossing” or “river ford”) in Hinduism, a holy river, mountain, or other place made sacred through association with a deity or saint. The seven holiest Hindu cities are said to be the sites of events recounted in mythological texts: Kashi (modern Varanasi, Uttar Pradesh), where the god Shiva founded a shrine of purification; Oudh (modern Ayodhya, Uttar Pradesh), birthplace of the god Rama; Mathura (in Uttar Pradesh), scene of Krishna’s nativity; Dvaraka (modern Dwarka, Gujarat state), where the adult Krishna ruled as king; Kanchipuram (in Tamil Nadu state), where the temple to the divine mother is built in the shape of a yantra, or sacred diagram; Hardiwar (in Uttar Pradesh), the spot where the Ganges River came to earth; and Ujjain (in Madhya Pradesh), site of a famous Shaivite lingam (sign of Shiva).
+  
+  Bathing is said to be particularly cleansing of sin when performed in the confluence of two rivers or at the source or joining of one of the seven sacred rivers—the Ganges, the Yamuna, the Godavari, the Narmada, the Indus, the Kaveri, and the mythical Saraswati. The four great abodes of the gods, located at the four corners of India—Badrinatha in the north, Dwarka in the west, Rameswaram in the south, and Puri in the east—attract large numbers of pilgrims yearly. The pithas, or spots that mark where pieces of the body of Shiva’s wife Sati fell to earth, are particularly sacred to the devotees of the goddess Shakti. Special occasions, such as an eclipse of the Sun, a Kumbh Mela (largest of the religious fairs), or the Rathayatra (wagon festival) at the Jagannatha temple in Puri, draw large gatherings.
+      </h4>
+    </div>
+    <div>
+      <img style="width: 70%;height: 60%;border-radius: 2%;margin-right: -30%;margin-top: 15%;" src="tirtha.jpg" >
+    </div>
+  </div>
+  <h2 style="text-align: center; margin-top: 5%; font-family: 'Caveat Brush'; font-size: 50px;">
+    Traditional clothing
+  </h2>
+  <div class="flex-container">
+    <div>
+      <img style="width: 20%;height: 30%;margin-left: -70%;" src="HinduClothing.png">
+    </div>
+    <div>
+      <h4 style="text-align: center;font-family: droid-sans;margin-left: -70%;">
+        The distinction between ordinary dress and religious dress is difficult to delineate in India because the ordinary members of the various socioreligious groups may often be distinguished by their costumes. For example, Parsi (Indian Zoroastrian) women wear the sari (robe) on the right shoulder, not the left.
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;margin-left: -70%;">
+        Hindu men frequently wear short coats (angarkha), and the women wear a long scarf, or robe (sari), whereas typical Muslim attire for men and women is a long white cotton shirt (kurtah) and trousers (pāʾijamah). Some Muslim women also wear a veil called the burka, which not only hides the face but also envelops the entire body.
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;margin-left: -70%;">
+        Traditional Sikh dress is an ordinary kurtah and cotton trousers, covered by a long hanging coat (choghah). The male Sikh is recognized especially by his practice of wearing his hair and beard uncut, the former being covered by a particularly large turban and the latter often restrained by a net.
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;margin-left: -70%;">
+        The Brahman (Hindu priest) is distinguished primarily by the sacred thread (upavita), which is bestowed on him during his boyhood investiture and worn diagonally across the body, over the left shoulder, at all times. During the water offering to saints, it is worn suspended around the neck and, during ancestor rites, over the right shoulder. Devotees may also wear a tonsure that leaves a tuft of hair longer than the rest (shikha). The pravrajya (“going forth”) associated with some Upanishads (Hindu speculative texts) involved a ritual rejection not only of homelife but also of the upavita and shikha. Ascetics usually wear the ordinary loincloth, or dhoti, for meditation or Yoga, but there is also a tradition of naked asceticism. A teacher (swami) traditionally wears a yellow robe.
+      </h4>
+    </div>
+  </div>
+  <h2 style="text-align: center; margin-top: 5%; font-family: 'Caveat Brush'; font-size: 50px;">
+    Hinduism festival
+  </h2>
+  
+   
+    <h4 style="text-align: center;font-family: Caveat Brush;">
+      DIWALI
+    </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        The festival of lights – Diwali or Deepavali – is the most popular festival on the Indian subcontinent. The underlying essence of Diwali revolves around light superseding darkness, or the triumph of goodness over evil. Glimmering diyas (lamps) adorn every nook and cranny of every residence in the evening, and there are also fireworks and a delicious traditional banquet.
+      </h4>
+
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Holi
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        Holi is a festival of colour and a harbinger of spring in India. The onset of Holi is marked by the burning of an effigy of Holika – an evil entity from Hindu mythology – to signify the triumph of good over evil. The night of revelry around the bonfire goes on until the embers die. The following morning kicks off with people smearing coloured powder on each other, more carousal and occasionally the consumption of bhang, an intoxicating edible cannabis preparation.
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Onam
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        Onam is the official state festival of Kerala, and is celebrated with the utmost fervour and festivities that include traditional sports like boat races and tug of war. The legend behind the celebration of Onam concerns the homecoming of a demigod called Mahabali, and is similar to the legend of Holika and the Holi festival. In both cases, the triumph of hope over despair is celebrated, although Mahabali is regarded with the utmost respect and Holika is not. Onam is growing beyond religious frontiers and establishing itself as a religiously diverse festival in Kerala.
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Maha Shivaratri
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        Shiva is the foremost deity in the Hindu pantheon and regarded as the destroyer. Maha Shivaratri, or ‘the great night of Shiva’, commemorates the supremacy of Shiva. People refrain from sleeping and instead pray to the great lord. Most dedicated disciples of Lord Shiva celebrate Maha Shivaratri by fasting and chanting the hymns to Tandava, a dance performed by Lord Shiva.
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Krishna Janmashtami
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        Lord Krishna has a prominent place in Hindu folklore. Krishna Janmashtami is the joyous festival celebrating the birth of Krishna, with a lot of merriment, dancing and singing. The gaiety of Krishna Janmashtami is often accompanied by competitions, notably breaking a pot filled with yoghurt that is suspended high in the air. Competitors form human pyramids in an attempt to break the pot and spill the contents, which is then formally offered as prasada (ritual offering).
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Makar Sankranti
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        In the Hindu calendar, the sun enters the Makara (Capricorn) part of the zodiac on 14 January every year. Surya (the sun god) is also worshipped all across the country with unparalleled devotion on this day. Although this day is popularly known as Makar Sankranti, the nomenclature varies from state to state, as do the corresponding customs. Tamils call it Pongal, Assamese celebrate it as Bihu and most North Indians call it Lohri. Regardless of the monikers, Makar Sankranti is a festival made unique by its celebrations, ranging from kite-flying to bonfires and riverbank rituals.
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Ganesh Chaturthi
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+Ganesh Chaturthi’s status as one of the most popular festivals in the country is partly due to its eccentricity, something the festival shares with its corresponding deity, Lord Ganesh. Ganesh is the son of Lord Shiva, the destroyer. Yet Ganesh is at odds with his father in his convictions and appearance. His face resembles that of an elephant, while his witty and playful temperament inspires devotion from people of all age groups. Ganesh Chaturthi commemorates the birth of Ganesh with the formal offering of prayers to a clay idol of the deity. The idol is later immersed in a body of water amid further festivities.
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+Navratri – Dussehra – Durga Puja
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+        Akin to the recurring theme in Hindu mythology of the victory of good over evil, the legend behind the Navratri festival has to do with Lord Rama’s triumph over Ravana, a demonic entity. An alternative legend revolves around the victories of the goddess Durga against the diabolical forces that once walked the face of the Earth. Navratri, meaning nine nights, is a time to honour the deities and plead for their blessings and goodwill.The invigorating festival centres around the goddess Durga in East India, and goes by the name of Durga Puja. The world-famous Dussehra of Mysore also falls on the final day of Navratri, and the festival as a whole essentially serves as the precursor to the coming Diwali.
+      </h4>
+      <h4 style="text-align: center;font-family: Caveat Brush;">
+        Rama Navami
+      </h4>
+      <h4 style="text-align: center;font-family: droid-sans;">
+      
+The epic poem of the Ramayana has vast religious significance in Hinduism. Its protagonist, Lord Rama, with his divine prowess and benevolence, slays immoral beings, conquers the realm and establishes order. The day marking the birth of Lord Rama is celebrated as Rama Navami, and the observances include charity, recitals and prayers.
+      </h4>
+
+      <h2 style="text-align: center; margin-top: 5%; font-family: 'Caveat Brush'; font-size: 50px;">
+        Hinduism Beliefs
+      </h2>
+      <div class="flex-container">
+        <div>
+          <h4 style="text-align: center;font-family: droid-sans;">
+          Hindus believe in the doctrines of samsara (the continuous cycle of life, death, and reincarnation) and karma (the universal law of cause and effect). One of the key thoughts of Hinduism is “atman,” or the belief in soul. This philosophy holds that living creatures have a soul, and they're all part of the supreme soul.
+        </h4>
+        <h4>
+          The Hindu religion is difficult to describe because it does not have a single founder, text, or set of beliefs. Rather, it is characterized by an overlapping set of practices, cultural values, and norms.
+        </h4>
+        <h4 style="text-align: center;font-family: Caveat Brush;font-size: 30px;">
+          Truth is eternal.
+        </h4>
+        <h4 style="text-align: center;font-family: droid-sans;">
+          Hindus pursue knowledge and understanding of the Truth: the very essence of the universe and the only Reality. According to the Vedas, Truth is One, but the wise express it in a variety of ways.
+        </h4>
+        <h4 style="text-align: center;font-family: Caveat Brush;font-size: 30px;">
+          Brahman is Truth and Reality.
+        </h4>
+        <h4 style="text-align: center;font-family: droid-sans;">
+          Hindus believe in Brahman as the one true God who is formless, limitless, all-inclusive, and eternal. Brahman is not an abstract concept; it is a real entity that encompasses everything (seen and unseen) in the universe.
+        </h4>
+
+        <h4 style="text-align: center;font-family: Caveat Brush;font-size: 30px;">
+          The Vedas are the ultimate authority.
+        </h4>
+        <h4 style="text-align: center;font-family: droid-sans;">
+          The Vedas are Hindu scriptures that contain revelations received by ancient saints and sages. Hindus believe that the Vedas are without beginning and without end; when everything else in the universe is destroyed (at the end of a cycle of time), the Vedas remain.
+        </h4>
+        <h4 style="text-align: center;font-family: Caveat Brush;font-size: 30px;">
+          Everyone should strive to achieve dharma.
+        </h4>
+        <h4 style="text-align: center;font-family: droid-sans;">
+          Understanding the concept of dharma helps you understand the Hindu faith. Unfortunately, no single English word adequately covers its meaning. Dharma can be described as right conduct, righteousness, moral law, and duty. Anyone who makes dharma central to one’s life strives to do the right thing, according to one’s duty and abilities, at all times.
+        </h4>
+        
+
+        <h4 style="text-align: center;font-family: Caveat Brush;font-size: 30px;">
+          Individual souls are immortal.
+        </h4>
+        <h4 style="text-align: center;font-family: droid-sans;">
+          A Hindu believes that the individual soul (atman) is neither created nor destroyed; it has been, it is, and it will be. Actions of the soul while residing in a body require that it reap the consequences of those actions in the next life — the same soul in a different body.
+
+The process of movement of the atman from one body to another is known as transmigration. The kind of body the soul inhabits next is determined by karma (actions accumulated in previous lives).
+        </h4>
+        <h4 style="text-align: center;font-family: Caveat Brush;font-size: 30px;">
+          The goal of the individual soul is moksha.
+        </h4>
+        <h4 style="text-align: center;font-family: droid-sans;">
+          Moksha is liberation: the soul’s release from the cycle of death and rebirth. It occurs when the soul unites with Brahman by realizing its true nature. Several paths can lead to this realization and unity: the path of duty, the path of knowledge, and the path of devotion (unconditional surrender to God).
+        </h4>
+        
+        </div>
+        <div>
+          <img style="height: 80%;width: 80%;border-radius: 3%;" src="Hindu-beliefa.jpeg"> 
+          <img style="height: 80%;width: 80%;border-radius: 3%;margin-top: 10%;" src="Ram.jpg"> 
+          <img style="height: 80%;width: 50%;border-radius: 3%;margin-top: 10%;" src="Krishna.jpeg"> 
+        </div>
+      
+      </div>
+      
+
+ 
+    
+
+  </div>
+
+
+  
+
+  
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+  
+  
+</div>
+
+</body>
+</html>
+
+

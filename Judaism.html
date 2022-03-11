@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+  <style>
+      .color{
+          background-color: #2D6E7E;
+          color: #FFFDDE;
+          border-radius: 10px;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.flex-container > div {
+  
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  text-align: center;
+  line-height: 1px;
+  font-size: 30px;
+}
+body {
+  padding: 25px;
+  background-color: #FBF8F1;
+  color: #010038;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: #022C43;
+  color: #FFD700;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lightblue;
+ 
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+      
+      
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="Logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill"> 
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: #6FE7DD;">Judaism</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html" style="color: #36539F;">Cultures of Asia</a></li>
+            <li><a class="dropdown-item" href="Buddhism.html" style="color: #36539F;">Buddhism</a></li>
+            <li><a class="dropdown-item" href="Christianity.html" style="color: #36539F;">Christianity</a></li>
+            <li><a class="dropdown-item" href="Confucianism.html" style="color: #36539F;">Confucianism</a></li>
+            <li><a class="dropdown-item" href="Hinduism.html" style="color: #36539F;">Hinduism</a></li>
+            <li><a class="dropdown-item" href="Islam.html" style="color: #36539F;">Islam</a></li>
+            <li><a class="dropdown-item" href="Jainism.html" style="color: #36539F;">Jainism</a></li>
+            <li><a class="dropdown-item" href="Judaism.html" style="color: #36539F;"> Judaism</a></li>
+            <li><a class="dropdown-item" href="Shintoism.html" style="color: #36539F;">Shintoism</a></li>
+            <li><a class="dropdown-item" href="Sikhism.html" style="color: #36539F;">Sikhism</a></li>
+            <li><a class="dropdown-item" href="Taoism.html" style="color: #36539F;">Taoism</a></li>
+            <li><a class="dropdown-item" href="Zoroastrianism.html" style="color: #36539F;">Zoroastrianism</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mt-3">
+  <h3 class="font-effect-shadow-multiple" style="text-align: center; font-size: 40px; ">Judaism</h3>
+  <label class="switch" style="margin-left: 90%;">
+    <input type="checkbox">
+    <span class="slider round" onclick="myFunction()" ></span>
+  </label>
+  
+ 
+    </div>
+  
+
+  
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+  
+  
+</div>
+
+</body>
+</html>
+
+
+
+

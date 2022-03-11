@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+  <style>
+      .color{
+          background-color: #2D6E7E;
+          color: #FEFBF3;
+          border-radius: 10px;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+body {
+  padding: 25px;
+  background-color: #FBF8F1;
+  color: #1A1A40;
+  font-size: 25px;
+  
+  
+}
+
+.flex-container > div {
+  
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  text-align: center;
+  line-height: 1px;
+  font-size: 30px;
+}
+.dark-mode {
+  background-color: #022C43;
+  color: #FFD700;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lightblue;
+ 
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+      
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="Logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill"> 
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: #6FE7DD;">Buddhism</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html" style="color: #36539F;">Cultures of Asia</a></li>
+            <li><a class="dropdown-item" href="Buddhism.html" style="color: #36539F;">Buddhism</a></li>
+            <li><a class="dropdown-item" href="Christianity.html" style="color: #36539F;">Christianity</a></li>
+            <li><a class="dropdown-item" href="Confucianism.html" style="color: #36539F;">Confucianism</a></li>
+            <li><a class="dropdown-item" href="Hinduism.html" style="color: #36539F;">Hinduism</a></li>
+            <li><a class="dropdown-item" href="Islam.html" style="color: #36539F;">Islam</a></li>
+            <li><a class="dropdown-item" href="Jainism.html" style="color: #36539F;">Jainism</a></li>
+            <li><a class="dropdown-item" href="Judaism.html" style="color: #36539F;"> Judaism</a></li>
+            <li><a class="dropdown-item" href="Shintoism.html" style="color: #36539F;">Shintoism</a></li>
+            <li><a class="dropdown-item" href="Sikhism.html" style="color: #36539F;">Sikhism</a></li>
+            <li><a class="dropdown-item" href="Taoism.html" style="color: #36539F;">Taoism</a></li>
+            <li><a class="dropdown-item" href="Zoroastrianism.html" style="color: #36539F;">Zoroastrianism</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mt-3" >
+  <img style="width: 20%;height: 20%;align-items: center; margin-left: 25%; margin-top: 0%;" src="1234.png">
+  <h3 class="font-effect-shadow-multiple" style="text-align: center; font-size: 80px; margin-top: -10%;margin-left: 15%;">Buddhism</h3>
+  <label class="switch" style="margin-left: 90%;">
+    <input type="checkbox">
+    <span class="slider round" onclick="myFunction()" ></span>
+  </label>
+
+  <div class="flex-container">
+  
+    <div>
+    <img style="width: 30%;height: 10%;margin-left: -50%;margin-top: 5%;" src="Buddhism.png">
+    </div>
+    <div>
+    <h4 style="margin-left: -60%; margin-top: 10%;font-family: droid-sans;">Gautama Buddha was the founder of Buddhism. He said that there are four Arya truths to overcome suffering. He was enlightened under a peepal tree on the banks of the Niranjana River in Gaya. His birthday is celebrated as Buddha Purnima in Sri Lanka (where it is called Vaishakh), Nepal, Bhutan, Burma, Thailand, Tibet, China, Korea, Laos, Vietnam, Mongolia, Cambodia, Singapore and Indonesia.
+    </h4>
+    <h4 style="margin-left: -60%; margin-top: 2%;font-family: sans-serif; font-family: droid-sans;">
+Gautama Buddha has told the four Aryan truths related to grief. Grief is everywhere in this world, in sorrows, in births, in fulfillment of desires, in separation from anyone. Grief is the cause of sorrow. To get rid of worldly sufferings, Lord Gautama Buddha has told about the Ashtangik Marg (Octagonal Path).
+    </h4>
+    
+    </div>
+  </div>
+
+  
+  <h4 style="text-align: center; margin-top: 3%; font-family: 'Caveat Brush'; font-size: 50px;">What is Buddhism? </h4>
+  <video width="600" height="450" style="margin-left: 30%;margin-top: -3%;" controls>
+    <source style="align-self: center;" src="Buddhism .mp4" type="video/mp4">
+    
+  Your browser does not support the video tag.
+  </video>
+  <h4 style="text-align: center;margin-top: 3%; font-family: 'Caveat Brush'; font-size: 50px;">
+    Place where Buddhism is followed
+  </h4>
+  <div class="flex-container">
+    <div>
+      <img style="width: 60%;height: 60%;margin-left: -30%;margin-top: 2%;" src="ok.png">
+    </div>
+    <div>
+    <h4 style="margin-left: -30%; margin-top: 3%;;font-family: droid-sans;"> 
+      Buddhism is the dominant religion in Bhutan, Myanmar, Cambodia, Mainland China, Hong Kong, Japan, Tibet, Laos, Macau, Mongolia, Singapore, Sri Lanka, Taiwan, Thailand, Kalmykia and Vietnam.
+    </h4>
+  </div>
+  </div>
+
+  <h2 style="text-align: center; margin-top: 5%; font-family: 'Caveat Brush'; font-size: 50px;">
+    TRADITIONAL CLOTHING
+  </h2>
+  <div class="flex-container">
+    
+
+  
+    <div>
+      <h4 style="font-family: droid-sans; margin-left: 10%;margin-top: 10%;width: 150%;">
+        In order to avoid the primary colours, Buddhist robes are of mixed colours, such as orange or brown. Another common term for the robe, kasaya, originally referred to the colour saffron, though this meaning is lost in the Chinese and Japanese derivatives, jiasa and kesa. The robe is normally hung from the left shoulder, leaving the right shoulder bare, though some ancient texts speak of disciples arranging their robes on the right shoulder before approaching the Buddha with a question. In cooler climates, both shoulders may be covered with an inner robe, and the outer robe is hung from the left shoulder, as in China.
+      </h4>
+    </div>
+    <div><img style="width: 30%;height: 30%;margin-left: 50%;" src="12.png"></div>
+   </div>
+   <h2 style="text-align: center; margin-top: 3%; font-family: 'Caveat Brush'; font-size: 50px;">
+    Buddhist Festival
+  </h2>
+  <div class="flex-container">
+    <div><img style="width: 60%;height: 50%;margin-left: -45%;margin-top: -40%; border-radius: 10%;" src="33.webp">
+      <img style="width: 60%;height: 50%;margin-left: -60.9%; margin-top: 40%; border-radius: 10%" src="34.jpg">
+    </div>
+    <div>
+      <h4 style="font-family: droid-sans; margin-left: -40%;margin-top: 0%;">
+        Vesak is one of the most important Buddhist festivals. It is also known as Wesak or Buddha Day.
+
+It is a celebration of Buddha's birthday and, for some Buddhists, marks his enlightenment (when he discovered life's meaning).
+      </h4>
+      <h4 style="font-family: droid-sans; margin-left: -40%;margin-top: 2%;">
+        Vesak is celebrated once a year. This year, it falls on Thursday 7th May.
+
+The date of Vesak changes each year as it take places at the time of the first full moon of the ancient lunar month of Vesakha, which usually falls in May or early June.
+      </h4>
+      <h4 style="font-family: droid-sans; margin-left: -40%;margin-top: 2%;">
+  Each Buddhist culture has its own traditions for the day, but it is celebrated in lots of different countries, including many across Asia such as: India, Thailand, and North and South Korea.
+
+  Many Buddhists will go to their local temple and some might even stay there throughout the day and night of the full moon.
+  
+  Many will do good deeds, take part in chanting and meditation, reflect on Buddhist teachings, bring offerings to the temple and share food with people.
+  Families may decorate their homes with lanterns, take part in processions and wear special white clothes to mark the occasion. Friends and family may also send cards to each other.
+  
+  A ceremony called Bathing the Buddha may also be held, when water is poured over the shoulders of the Buddha to remind people to clear their minds of negative thoughts like greed and hatred.
+        
+</h4>
+
+
+
+    </div>
+    
+   </div>
+   <h2 style="text-align: center; margin-top: 3%; font-family: 'Caveat Brush'; font-size: 50px;">
+    Buddhist Beliefs
+  </h2>
+   <div class="flex-container">
+   
+     <div>
+       <h4 style="font-family: droid-sans; margin-left: 0%;margin-top: 2%;width: 160%;margin-top: 10%;">
+        Buddhist morality is codified in the form of 10 precepts (dasa-sīla), which require abstention from: (1) taking life; (2) taking what is not given; (3) committing sexual misconduct (interpreted as anything less than chastity for the monk and as sexual conduct contrary to proper social norms, such as adultery, for the layman); (4) engaging in false speech; (5) using intoxicants; (6) eating after midday; (7) participating in worldly amusements; (8) adorning the body with ornaments and using perfume; (9) sleeping on high and luxurious beds; and (10) accepting gold and silver.
+      </h4>
+     </div>
+     <div>
+      <img style="width: 40%;height: 40%;margin-left: 60%; margin-top: 2%; " src="35.png">
+
+     </div>
+   </div>
+   
+  
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    
+    </script>
+ 
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
